@@ -69,6 +69,7 @@
                         <div class="ty-control-group product-list-field">
                             <label class="ty-control-group__label">{__("send_via")}:</label>
                             <span class="ty-control-group__item">{if $gift.send_via == "E"}{__("email")}{else}{__("postal_mail")}{/if}</span>
+                        
                         </div>
 
                         <div class="clearfix"></div>

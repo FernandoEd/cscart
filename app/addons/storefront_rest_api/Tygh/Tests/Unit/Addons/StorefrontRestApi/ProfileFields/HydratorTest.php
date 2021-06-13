@@ -48,38 +48,7 @@ class HydratorTest extends ATestCase
                 null,
                 [],
                 [
-                    'E' => [
-                        'description' => '',
-                        'fields'      => [
-                            [
-                                'field_id'    => 'email',
-                                'field_type'  => 'I',
-                                'field_name'  => 'email',
-                                'description' => 'E-mail',
-                                'is_default'  => true,
-                                'required'    => true,
-                                'value'       => null,
-                            ],
-                            [
-                                'field_id'    => 'password1',
-                                'field_type'  => 'W',
-                                'field_name'  => 'password1',
-                                'description' => 'Password',
-                                'required'    => false,
-                                'is_default'  => true,
-                                'value'       => null,
-                            ],
-                            [
-                                'field_id'    => 'password2',
-                                'field_type'  => 'W',
-                                'field_name'  => 'password2',
-                                'description' => 'Confirm password',
-                                'required'    => false,
-                                'is_default'  => true,
-                                'value'       => null,
-                            ],
-                        ],
-                    ],
+                    
                     'C' => [
                         'description' => 'Contact information',
                         'fields'      => [

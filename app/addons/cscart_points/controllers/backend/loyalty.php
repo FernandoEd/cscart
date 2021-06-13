@@ -18,17 +18,38 @@ if($_SERVER['REQUEST_METHOD'] == 'GET') {
 
         //mostrar no template
         Tygh::$app['view']->assign('items', $points);
+        
 
     } 
     if ($mode == 'update'){
             $id_anterior = $_GET['user_id'];
             $joinids = "select * from cscart_points as P Left Join cscart_users as U on P.user_id = U.fk_user_id where user_id ".$id_anterior;
         }
-}elseif ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    if($mode != "manage"){
+}elseif ($_SERVER['REQUEST_METHOD'] == 'POST' ) {
+    if(isset($_REQUEST['contactSubmit']))
+{
+       // contact submit clicked do action based on that
+
+    if($mode != "manage" ){
         throw new ErrorException("Pedido Invalido");
     }
     $query1 = "insert into cscart_points(fk_user_id, data, points) values(".$_POST["user_id"].",NOW(), ".$_POST["points"].")";
     db_query($query1);
-    return array(CONTROLLER_STATUS_REDIRECT, 'admin.php?dispatch=loyalty.manage');
+    return array(CONTROLLER_STATUS_REDIRECT, 'admin.php?dispatch=loyalty.manage');    
 }
+
+if(isset($_REQUEST['submitEmail']) )
+{ $variable = ($_REQUEST['user']) ;
+  
+       // contact submit clicked do action based on that
+
+    if($mode != "manage" ){
+        throw new ErrorException("Pedido Invalido");
+    }  
+     $query1 = "delete from cscart_points where fk_user_id={$variable} ";
+    db_query($query1);
+    return array(CONTROLLER_STATUS_REDIRECT, 'admin.php?dispatch=loyalty.manage');    
+}
+} 
+
+
