@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.21, created on 2021-06-14 20:02:43
+<?php /* Smarty version Smarty-3.1.21, created on 2021-06-14 22:19:41
          compiled from "C:\xampp\htdocs\cscart\design\themes\responsive\templates\blocks\list_templates\grid_list.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:176876941960c78bb3b40ef7-41324960%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:10696287260c7abcd937668-65375625%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'tygh',
     ),
   ),
-  'nocache_hash' => '176876941960c78bb3b40ef7-41324960',
+  'nocache_hash' => '10696287260c7abcd937668-65375625',
   'function' => 
   array (
   ),
@@ -51,9 +51,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.21',
-  'unifunc' => 'content_60c78bb3bc8de7_83294024',
+  'unifunc' => 'content_60c7abcd9ada53_80096146',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_60c78bb3bc8de7_83294024')) {function content_60c78bb3bc8de7_83294024($_smarty_tpl) {?><?php if (!is_callable('smarty_function_script')) include 'C:/xampp/htdocs/cscart/app/functions/smarty_plugins\\function.script.php';
+<?php if ($_valid && !is_callable('content_60c7abcd9ada53_80096146')) {function content_60c7abcd9ada53_80096146($_smarty_tpl) {?><?php if (!is_callable('smarty_function_script')) include 'C:/xampp/htdocs/cscart/app/functions/smarty_plugins\\function.script.php';
 if (!is_callable('smarty_function_split')) include 'C:/xampp/htdocs/cscart/app/functions/smarty_plugins\\function.split.php';
 if (!is_callable('smarty_function_math')) include 'C:\\xampp\\htdocs\\cscart\\app\\lib\\vendor\\smarty\\smarty\\libs\\plugins\\function.math.php';
 if (!is_callable('smarty_block_hook')) include 'C:/xampp/htdocs/cscart/app/functions/smarty_plugins\\block.hook.php';

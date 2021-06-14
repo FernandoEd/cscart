@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.21, created on 2021-06-14 19:35:02
+<?php /* Smarty version Smarty-3.1.21, created on 2021-06-14 22:33:15
          compiled from "C:\xampp\htdocs\cscart\design\themes\responsive\templates\views\profiles\success_add.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:59272294060c78536b759b6-62838792%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:23084123560c7aefb25fc42-45649565%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '8676d61978318570934e5cb180f6df73cff09d8d' => 
     array (
       0 => 'C:\\xampp\\htdocs\\cscart\\design\\themes\\responsive\\templates\\views\\profiles\\success_add.tpl',
-      1 => 1623688338,
+      1 => 1623697866,
       2 => 'tygh',
     ),
   ),
-  'nocache_hash' => '59272294060c78536b759b6-62838792',
+  'nocache_hash' => '23084123560c7aefb25fc42-45649565',
   'function' => 
   array (
   ),
@@ -23,9 +23,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.21',
-  'unifunc' => 'content_60c78536bb9ee2_87992230',
+  'unifunc' => 'content_60c7aefb273597_10869749',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_60c78536bb9ee2_87992230')) {function content_60c78536bb9ee2_87992230($_smarty_tpl) {?><?php if (!is_callable('smarty_block_hook')) include 'C:/xampp/htdocs/cscart/app/functions/smarty_plugins\\block.hook.php';
+<?php if ($_valid && !is_callable('content_60c7aefb273597_10869749')) {function content_60c7aefb273597_10869749($_smarty_tpl) {?><?php if (!is_callable('smarty_block_hook')) include 'C:/xampp/htdocs/cscart/app/functions/smarty_plugins\\block.hook.php';
 if (!is_callable('smarty_function_set_id')) include 'C:/xampp/htdocs/cscart/app/functions/smarty_plugins\\function.set_id.php';
 ?><?php
 \Tygh\Languages\Helper::preloadLangVars(array('successfully_registered','success_registration_text','edit_profile','edit_profile_note','orders','track_orders','product_comparison_list','comparison_list_note','successfully_registered','success_registration_text','edit_profile','edit_profile_note','orders','track_orders','product_comparison_list','comparison_list_note'));

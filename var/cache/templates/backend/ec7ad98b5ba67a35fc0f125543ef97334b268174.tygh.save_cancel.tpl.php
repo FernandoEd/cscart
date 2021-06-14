@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.21, created on 2021-06-14 19:11:22
+<?php /* Smarty version Smarty-3.1.21, created on 2021-06-14 22:16:51
          compiled from "C:\xampp\htdocs\cscart\design\backend\templates\buttons\save_cancel.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:212551952460c77faaa7d803-21304261%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:3396078860c7ab23ecdff9-00616417%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'tygh',
     ),
   ),
-  'nocache_hash' => '212551952460c77faaa7d803-21304261',
+  'nocache_hash' => '3396078860c7ab23ecdff9-00616417',
   'function' => 
   array (
   ),
@@ -35,9 +35,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.21',
-  'unifunc' => 'content_60c77faaa91a60_17488163',
+  'unifunc' => 'content_60c7ab23edcd87_41678509',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_60c77faaa91a60_17488163')) {function content_60c77faaa91a60_17488163($_smarty_tpl) {?><?php
+<?php if ($_valid && !is_callable('content_60c7ab23edcd87_41678509')) {function content_60c7ab23edcd87_41678509($_smarty_tpl) {?><?php
 \Tygh\Languages\Helper::preloadLangVars(array('save','save_and_close','create','create_and_close','cancel'));
 ?>
 <?php if ($_smarty_tpl->tpl_vars['but_target_id']->value||$_smarty_tpl->tpl_vars['but_target_form']->value) {?>

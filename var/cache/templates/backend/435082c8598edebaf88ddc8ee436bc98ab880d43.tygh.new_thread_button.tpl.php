@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.21, created on 2021-06-14 20:20:31
+<?php /* Smarty version Smarty-3.1.21, created on 2021-06-14 22:16:51
          compiled from "C:\xampp\htdocs\cscart\design\backend\templates\addons\vendor_communication\views\vendor_communication\components\new_thread_button.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:148801426160c78fdfdd2d82-09855647%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:106916063460c7ab23d83336-10426147%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'tygh',
     ),
   ),
-  'nocache_hash' => '148801426160c78fdfdd2d82-09855647',
+  'nocache_hash' => '106916063460c7ab23d83336-10426147',
   'function' => 
   array (
   ),
@@ -35,9 +35,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.21',
-  'unifunc' => 'content_60c78fdfe04d00_81863650',
+  'unifunc' => 'content_60c7ab23d9b4e0_29145352',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_60c78fdfe04d00_81863650')) {function content_60c78fdfe04d00_81863650($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_enum')) include 'C:/xampp/htdocs/cscart/app/functions/smarty_plugins\\modifier.enum.php';
+<?php if ($_valid && !is_callable('content_60c7ab23d9b4e0_29145352')) {function content_60c7ab23d9b4e0_29145352($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_enum')) include 'C:/xampp/htdocs/cscart/app/functions/smarty_plugins\\modifier.enum.php';
 ?><?php
 \Tygh\Languages\Helper::preloadLangVars(array('vendor_communication.contact_admin','vendor_communication.contact_vendor'));
 ?>
@@ -73,7 +73,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <?php if ($_smarty_tpl->tpl_vars['return_url']->value) {?>
     <?php ob_start();
 echo htmlspecialchars(urlencode($_smarty_tpl->tpl_vars['return_url']->value), ENT_QUOTES, 'UTF-8');
-$_tmp14=ob_get_clean();?><?php $_smarty_tpl->tpl_vars['href'] = new Smarty_variable(((string)$_smarty_tpl->tpl_vars['href']->value)."&return_url=".$_tmp14, null, 0);?>
+$_tmp18=ob_get_clean();?><?php $_smarty_tpl->tpl_vars['href'] = new Smarty_variable(((string)$_smarty_tpl->tpl_vars['href']->value)."&return_url=".$_tmp18, null, 0);?>
 <?php }?>
 
 <?php $_smarty_tpl->_capture_stack[0][] = array("thread_button", null, null); ob_start(); ?>
