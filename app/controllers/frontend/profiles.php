@@ -132,6 +132,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 
 if ($mode == 'add') {
+    
 
     if (!empty($auth['user_id'])) {
         return array(CONTROLLER_STATUS_REDIRECT, 'profiles.update');
@@ -166,6 +167,9 @@ if ($mode == 'add') {
     Tygh::$app['view']->assign('ship_to_another', fn_check_shipping_billing($user_data, $profile_fields));
     Tygh::$app['view']->assign('countries', fn_get_simple_countries(true, CART_LANGUAGE));
     Tygh::$app['view']->assign('states', fn_get_all_states());
+
+  
+    
 
 } elseif ($mode == 'update') {
 
@@ -262,6 +266,7 @@ if ($mode == 'add') {
     if (empty($auth['user_id'])) {
         return array(CONTROLLER_STATUS_REDIRECT, 'profiles.add');
     }
+    
 
     fn_add_breadcrumb(__('registration'));
 }

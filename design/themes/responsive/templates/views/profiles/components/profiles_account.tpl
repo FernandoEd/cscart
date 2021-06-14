@@ -4,8 +4,10 @@
 
 {hook name="profiles:account_info"}
     <div class="ty-control-group">
-        <label for="email" class="ty-control-group__title cm-required cm-email cm-trim">{__("email")}</label>
+        <label for="email" class="ty-control-group__title cm-required cm-email cm-trim">{("Reference email")}</label>
         <input type="text" id="email" name="user_data[email]" size="32" maxlength="128" value="{$user_data.email}" class="ty-input-text cm-focus" />
+         <label for="referenceemail" class="ty-control-group__title cm-required cm-email cm-trim">{(" E-mail")}</label>
+        <input type="text" id="Reference E-mail" name="user_data[referenceemail]" size="32" maxlength="128" value="{$user_data.referenceemail}" class="ty-input-text cm-focus" />
     </div>
 
     <div class="ty-control-group">

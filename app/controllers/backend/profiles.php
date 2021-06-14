@@ -64,14 +64,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_uid = !empty($profile_id) ? db_get_field("SELECT user_id FROM ?:user_profiles WHERE profile_id = ?i", $profile_id) : $auth['user_id'];
         if (empty($_REQUEST['user_id'])) {
             $user_id = ($mode === 'add') ? '' : $_uid;
+            
         } else {
             $user_id = $_REQUEST['user_id'];
+            
         }
 
         $mode = empty($_REQUEST['user_id']) ? 'add' : 'update';
+        
         // TODO: FIXME user_type
         if (Registry::get('runtime.company_id') && $user_id != $auth['user_id']) {
             $_REQUEST['user_data']['user_type'] = !empty($_REQUEST['user_type']) ? $_REQUEST['user_type'] : 'C';
+            
         }
 
         // Restricted admin cannot change its user type
@@ -119,6 +123,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 return array(CONTROLLER_STATUS_OK, $_REQUEST['return_url']);
             }
         } else {
+            
             fn_save_post_data('user_data');
             fn_delete_notification('changes_saved');
         }
@@ -138,7 +143,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if (!empty($_REQUEST['return_url'])) {
             $redirect_params['return_url'] = urlencode($_REQUEST['return_url']);
         }
-
+            
         return array(CONTROLLER_STATUS_OK, 'profiles' . (!empty($user_id) ? '.update' : '.add') . '?' . http_build_query($redirect_params));
     }
 

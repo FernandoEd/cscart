@@ -232,3 +232,4 @@
 {/capture}
 
 {include file="common/mainbox.tpl" title=$_title content=$smarty.capture.mainbox sidebar=$smarty.capture.sidebar adv_buttons=$smarty.capture.adv_buttons buttons=$smarty.capture.buttons content_id="manage_users"}
+

@@ -38,7 +38,10 @@
     <div class="ty-control-group">
         <label for="{$id_prefix}elm_email" class="cm-required cm-email">{__("email")}<i>*</i></label>
         <input type="text" id="{$id_prefix}elm_email" name="user_data[email]" size="32" value="{$user_data.email}" class="ty-input-text {$_class}" {$disabled_param} />
+       
     </div>
+    
+    
     
 {else}
 
@@ -59,6 +62,8 @@
         {/if}
     {/foreach}
 {/if}
+
+
 
 {if $fields}
 
@@ -92,6 +97,7 @@
 
 {if !$nothing_extra}
     {include file="common/subheader.tpl" title=$title}
+    
 {/if}
 
 {$default_data_name = $default_data_name|default:"user_data"}
@@ -376,6 +382,7 @@
     {elseif $field.field_type == "ProfileFieldTypes::CHECKBOX"|enum}
         <input type="hidden" name="{$data_name}[{$data_id}]" value="N" {if !$skip_field}{$disabled_param nofilter}{/if} />
         <input type="checkbox" id={$element_id} name="{$data_name}[{$data_id}]" value="Y" {if $value == "Y"}checked="checked"{/if} class="checkbox {if !$skip_field}{$_class}{else}cm-skip-avail-switch{/if}" {if !$skip_field}{$disabled_param nofilter}{/if} />
+      
 
     {elseif $field.field_type == "ProfileFieldTypes::TEXT_AREA"|enum}
         <textarea {if $field.autocomplete_type}x-autocompletetype="{$field.autocomplete_type}"{/if} class="ty-input-textarea {if !$skip_field}{$_class}{else}cm-skip-avail-switch{/if}" id={$element_id} name="{$data_name}[{$data_id}]" cols="32" rows="3" {if !$skip_field}{$disabled_param nofilter}{/if}>{$value}</textarea>

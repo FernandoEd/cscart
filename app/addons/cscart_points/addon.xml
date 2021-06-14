@@ -19,7 +19,8 @@
                     <item id="number_points_regist">
                         <name>Number of points</name>
                         <type>input</type>
-                        <default_value>20</default_value>
+                        <default_value id="pointsregist">20</default_value>  
+                                       
                     </item>
                     <item id="number_points_purchase">
                         <name>Number of points</name>
@@ -28,8 +29,10 @@
                     </item>
                 </items>
             </section>
+              
         </sections>
     </settings>
+    
 
 
     <queries>
@@ -41,6 +44,7 @@
             data_points DATE NOT NULL,
             PRIMARY KEY (id_cscart_points),
             INDEX fk_cscart_points_cscart_user_idx (fk_user_id ASC)
+            
             )
         </item>
     </queries>

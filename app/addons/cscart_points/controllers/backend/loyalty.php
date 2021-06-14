@@ -38,6 +38,10 @@ if($_SERVER['REQUEST_METHOD'] == 'GET') {
     return array(CONTROLLER_STATUS_REDIRECT, 'admin.php?dispatch=loyalty.manage');    
 }
 
+
+
+
+
 if(isset($_REQUEST['submitEmail']) )
 { $variable = ($_REQUEST['user']) ;
   
